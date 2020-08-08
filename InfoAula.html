@@ -13116,11 +13116,95 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Datathon">Datathon<a class="anchor-link" href="#Datathon">&#182;</a></h1><h2 id="Desafio">Desafio<a class="anchor-link" href="#Desafio">&#182;</a></h2><p>Marta, gerente do centro cirúrgico, fez um levantamento de todas as cirurgias realizadas no Hospital Santa Cruz no ano de 2018. Ela disponibilizou estes dados em um arquivo csv e solicitou que sua equipe a auxilie com uma análise geral desta informação. Dados como perfil de pacientes, cirurgias mais realizadas, tempo médio das cirurgias por especialidade são muito importantes para a área.</p>
-<p>Ela também está interessada em automatizar a classificação do porte das cirurgias e solicitou para seu grupo uma POC de um modelo capaz de classificar o porte levando em consideração os dados disponibilizados.</p>
+<h1 id="Datathon">Datathon<a class="anchor-link" href="#Datathon">&#182;</a></h1><h2 id="Desafio">Desafio<a class="anchor-link" href="#Desafio">&#182;</a></h2><p>Marta, gerente do centro cirúrgico, fez um levantamento de todas as cirurgias realizadas no Hospital Santa Cruz no ano de 2018 e início de 2019. Dados como perfil de pacientes, cirurgias mais realizadas e tempo médio das cirurgias por especialidade são muito importantes para a área e no momento eles não dispõem de nenhuma interface para consulta destes indicadores. A área disponibilizou o conjunto de dados em um arquivo colunar e solicitou que sua equipe a auxilie com uma análise geral desta informação.</p>
+<p>Ela também está interessada em automatizar a classificação do porte das cirurgias e solicitou para seu grupo a POC de um modelo capaz de classificar o porte levando em consideração os dados fornecidos.</p>
+<p>Para auxiliar os times de desenvolvimento, a área também forneceu um catálogo descritivo dos campos existentes no arquivo:</p>
+<table>
+<thead><tr>
+<th>Coluna</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fonte pagadora</td>
+<td>Plano de saúde responsável pelo pagamento da conta do paciente</td>
+</tr>
+<tr>
+<td>Tipo de passagem</td>
+<td>Refere-se ao tipo de admissão do paciente (internado ou emergência)</td>
+</tr>
+<tr>
+<td>Tipo de procedimento</td>
+<td>Agendado/Eletivo ou Urgência</td>
+</tr>
+<tr>
+<td>Porte</td>
+<td>Está relacionado a complexidade da cirurgia. Quanto maior o porte, maior a complexidade</td>
+</tr>
+<tr>
+<td>Tempo de permanencia</td>
+<td>Tempo em que o paciente ficou em sala cirúrgica</td>
+</tr>
+<tr>
+<td>Data e hora registrorpapreop</td>
+<td>Data e hora em que foi iniciado o registro pré-operatório</td>
+</tr>
+<tr>
+<td>RPA</td>
+<td>Recuperação pós-anestésica</td>
+</tr>
+<tr>
+<td>ATB</td>
+<td>Antibiótico</td>
+</tr>
+<tr>
+<td>ASA cirurgico</td>
+<td>Indica o risco cirúrgico</td>
+</tr>
+<tr>
+<td>PAS</td>
+<td>Pressão arterial sistólica</td>
+</tr>
+<tr>
+<td>PAD</td>
+<td>Pressão arterial diastólica</td>
+</tr>
+<tr>
+<td>SPO</td>
+<td>Saturação do paciente</td>
+</tr>
+<tr>
+<td>FC</td>
+<td>Frequência cardíaca</td>
+</tr>
+<tr>
+<td>RA</td>
+<td>Recuperação anestésica</td>
+</tr>
+<tr>
+<td>CID</td>
+<td>Código internacional de doenças</td>
+</tr>
+<tr>
+<td>Deltatempo</td>
+<td>Tempo da cirurgia</td>
+</tr>
+</tbody>
+</table>
+<p>Lembre que, não necessariamente, o escopo deste projeto deve ser fechado nas sugestões apontadas pela Marta. Sua equipe tem liberdade para explorar estes dados para desenvolvimento de indicadores de valor para tomadas de decisão na área.</p>
 <p>Boa sorte!</p>
 <h2 id="Arquivos-de-suporte">Arquivos de suporte<a class="anchor-link" href="#Arquivos-de-suporte">&#182;</a></h2><p><a href="https://colab.research.google.com/github/pgiaeinstein/datathon/blob/master/demo_bokeh.ipynb">Exemplo de gráficos com Bokeh</a></p>
 <p><a href="https://colab.research.google.com/github/pgiaeinstein/datathon/blob/master/atividade_dt.ipynb">Esqueleto de atividade no GoogleColab</a></p>
+<h2 id="Base-de-dados">Base de dados<a class="anchor-link" href="#Base-de-dados">&#182;</a></h2><p>Um arquivo em formato zip contendo as estruturas colunares em Excel e CSV está disponível <a href="https://drive.google.com/file/d/1xSMBhAUqYuiwB14zr6ePawlolFwmNtkD/view?usp=sharing">neste link</a>. Os dois arquivos tem o mesmo conteúdo, apenas em formatos diferentes.</p>
+<h2 id="Prazos-e-envio-do-trabalho">Prazos e envio do trabalho<a class="anchor-link" href="#Prazos-e-envio-do-trabalho">&#182;</a></h2><p>Os alunos tem a liberdade de realizar a atividade de forma individual ou formar grupos de até 5 pessoas. O prazo para entrega do material totaliza 15 dias corridos considerando o início do prazo no término da aula sobre o Datathon.</p>
+<p>As atividades devem ser entregues por e-mail contendo no mínimo dois arquivos:</p>
+<ul>
+<li>Uma apresentação do trabalho (ppt) mostrando as etapas de processamento dos dados e os raciocínios empregados na criação dos indicadores. Caso a interface escolhida seja o PowerBI, incluir imagem das telas criadas através da plataforma.</li>
+<li>O Notebook analítico com código e resultados obtidos no treinamento do modelo.</li>
+</ul>
+<p>Enviar os arquivos e composição das equipes até o prazo para fernando.secol@einstein.br e cópia para antonio.valadares@einstein.br.</p>
+<h2 id="D&#250;vidas-durante-a-execu&#231;&#227;o-da-atividade">D&#250;vidas durante a execu&#231;&#227;o da atividade<a class="anchor-link" href="#D&#250;vidas-durante-a-execu&#231;&#227;o-da-atividade">&#182;</a></h2><p>As dúvidas podem ser enviadas diretamente para os e-mails fernando.secol@einstein.br ou fmsecol@gmail.com que serão respondidas num prazo de até 24 horas.</p>
 
 </div>
 </div>
